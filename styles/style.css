@@ -95,7 +95,7 @@ html
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
-  gap: 26px;
+  gap: 25px;
 }
 
 .content__list
@@ -120,6 +120,37 @@ html
   display: block;
   text-decoration: none;
   color: inherit;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  margin: 2px;
+}
+
+.content__card-link:active
+{
+  background-color: #545050;
+}
+
+.content__card-link:hover
+{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content__card-link:focus
+{
+  outline: none;
+}
+
+.content__card-link:focus-visible
+{
+  outline: solid 1px currentColor;
+  outline-offset: 1px;
+}
+
+.content__card-link_current
+{
+  background-color: #545050;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .content__video-card
@@ -137,6 +168,7 @@ html
   font-weight: 700;
   font-size: 30px;
   line-height: 1;
+  text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -192,6 +224,13 @@ html
   inline-size: fit-content;
   cursor: pointer;
   align-items: center;
+  outline: none;
+}
+
+.search-form__label:has(:focus-visible)
+{
+  outline: solid 1px #fff;
+  outline-offset: 1px;
 }
 
 .search-form__checkbox-list > .search-form__label:hover > .search-form__label-text
@@ -220,6 +259,7 @@ html
   font-size: 18px;
   line-height: 1.2;
   appearance: none;
+  padding: 2px 0;
 }
 
 .search-form__textfield:active
