@@ -137,6 +137,10 @@ html
   font-weight: 700;
   font-size: 30px;
   line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-inline-size: 200px;
 }
 
 .content__video-card-description
