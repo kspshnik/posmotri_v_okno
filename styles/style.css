@@ -57,7 +57,7 @@ html
   background-color: #1b1919;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -78,7 +78,7 @@ html
   justify-content: space-between;
   align-items: flex-end;
   inline-size: 1140px;
-  block-size: 100%;
+  block-size: fit-content;
   gap: 30px;
   padding-block: 133px;
 }
@@ -165,6 +165,14 @@ html
   justify-content: space-between;
   align-items: flex-start;
 }
+
+.search-form__fieldset
+{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+}
+
 
 .search-form__fieldset-title
 {
