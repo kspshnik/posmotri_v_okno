@@ -191,6 +191,7 @@ html
   flex-flow: row nowrap;
   inline-size: fit-content;
   cursor: pointer;
+  align-items: center;
 }
 
 .search-form__checkbox-list > .search-form__label:hover > .search-form__label-text
