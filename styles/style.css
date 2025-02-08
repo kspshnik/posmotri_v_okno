@@ -101,7 +101,7 @@ html
 .content__list
 {
   block-size: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
   position: relative;
 }
 
